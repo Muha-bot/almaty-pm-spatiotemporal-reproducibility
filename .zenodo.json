@@ -1,0 +1,37 @@
+{
+  "title": "Almaty PM2.5 / PM10 spatiotemporal modelling \u2014 reproducibility package",
+  "description": "Reproducibility package (code, hash-locked derived data, and verification scripts) for the manuscript 'Spatiotemporal Modelling of PM2.5 and PM10 in Almaty: Leakage-Controlled Forecasting, GIS Predictors, and Geographically Weighted Regression'. Does not include the manuscript text or raw third-party GIS/ERA5 source files; see README.md.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Spankulova, Lazat",
+      "affiliation": "[Institution]"
+    },
+    {
+      "name": "Mukhamejanova, Gulnar",
+      "affiliation": "[Institution]"
+    },
+    {
+      "name": "Sagitova, Gulsim",
+      "affiliation": "[Institution]"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "[manuscript DOI once assigned]",
+      "resource_type": "publication-article"
+    }
+  ],
+  "keywords": [
+    "PM2.5",
+    "PM10",
+    "air quality",
+    "Almaty",
+    "geographically weighted regression",
+    "ERA5",
+    "reproducibility"
+  ]
+}

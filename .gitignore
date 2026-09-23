@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# Credentials / local configuration
+.cdsapirc
+*.key
+*.pem
+
+# Large raw environmental files
+data/raw/*
+!data/raw/README.md
+*.nc
+*.nc4
+*.grib
+*.grib2
+*.tif
+*.tiff
+*.pbf
+*.part
+
+# Model binaries / caches
+*.pkl
+*.pickle
+*.joblib
+*.model
+.cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Manuscripts are not part of the public code package
+*.docx
+*.doc

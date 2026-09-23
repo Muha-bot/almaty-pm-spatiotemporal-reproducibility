@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the associated manuscript."
+title: "Almaty PM2.5 / PM10 spatiotemporal modelling — reproducibility package"
+type: software
+authors:
+  - family-names: "Spankulova"
+    given-names: "Lazat"
+    affiliation: "[Institution]"
+  - family-names: "Mukhamejanova"
+    given-names: "Gulnar"
+    affiliation: "[Institution]"
+  - family-names: "Sagitova"
+    given-names: "Gulsim"
+    affiliation: "[Institution]"
+repository-code: "https://github.com/Muha-bot/almaty-pm-spatiotemporal-reproducibility"
+license: "MIT"
+license-notice: "MIT applies to the code only. Data under data/ is CC BY-NC 4.0; see docs/DATA_LICENSE.md."
+preferred-citation:
+  type: article
+  title: "Spatiotemporal Modelling of PM2.5 and PM10 in Almaty: Leakage-Controlled Forecasting, GIS Predictors, and Geographically Weighted Regression"
+  authors:
+    - family-names: "Spankulova"
+      given-names: "Lazat"
+    - family-names: "Mukhamejanova"
+      given-names: "Gulnar"
+    - family-names: "Sagitova"
+      given-names: "Gulsim"
+  journal: "[Journal name]"
+  year: 2026
