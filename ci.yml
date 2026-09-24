@@ -1,0 +1,36 @@
+name: reproducibility-smoke-check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: pip install pytest
+      # Steps below call the underlying Python commands directly (not via
+      # `make`) so the same checks run identically on Linux and Windows
+      # runners, matching the two shells documented in README.md.
+      - run: python -m compileall -q src
+      - run: >
+          python src/forecasting/verify_archived_results.py
+          --data-dir data/derived/baseline --out-dir results/verified
+      - run: >
+          python src/data/verify_almaty_hourly_long.py
+          --data data/derived/baseline/almaty_hourly_long.csv.gz
+          --qc-out results/verified/almaty_hourly_long_qc_recomputed.json
+      - run: >
+          python src/spatial/verify_spatial_archive.py
+          --data-dir data/derived/spatial
+      - run: python src/figures/make_verified_figures.py --repo-root .
+      - run: python -m pytest -q
