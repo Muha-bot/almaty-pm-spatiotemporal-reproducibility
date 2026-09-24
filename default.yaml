@@ -1,0 +1,21 @@
+# Central, version-controlled constants used across src/, so that the same
+# fixed values (CRS, GWR gate settings, forecast-origin join rule) are not
+# re-hardcoded independently in several scripts. Fill in / adjust to match
+# what is actually implemented in src/ before relying on this file; it is a
+# scaffold, not a new source of truth.
+
+crs:
+  projected_epsg: 32643        # used by src/gis and src/spatial
+
+gwr:
+  neighbours_k: 80              # adaptive bi-square, AICc bandwidth selection
+  target_stations: 133
+
+era5:
+  source: "C3S/ECMWF reanalysis-era5-single-levels"
+  doi: "10.24381/cds.adbb2d47"
+  join_rule: "forecast_origin_utc_hour"   # target-hour reanalysis forbidden
+
+forecast:
+  horizons_hours: [1, 24]
+  no_random_split: true         # chronological split only for primary claims
