@@ -1,0 +1,5 @@
+# Code Availability template
+
+Use this wording only after the repository is public and the manuscript has been synchronized with the deposited evidence.
+
+> Preserved analysis code, source-data retrieval scripts, a hash-locked normalized KGMT PM2.5/PM10 input snapshot, derived audit artifacts, and reproducibility checks for this study are available at **[GITHUB_REPOSITORY_URL]**. Large public ERA5, Copernicus DEM, ESA WorldCover, and OpenStreetMap source files are not redistributed; fixed source definitions and reproducible retrieval/extraction scripts are provided instead. The repository independently verifies the archived A0/A1 metric exports and the preserved spatial/GWR archive. The exact original row-level A0/A1 training script was not recovered in the preserved package; this limitation is documented in `REPRODUCIBILITY_STATUS.md` and should not be described as full end-to-end retraining reproducibility unless a clean rerun is completed. Data licensing and attribution are documented separately in `DATA_LICENSE.md`. The archived release corresponding to the submitted manuscript is available at **[DOI_IF_CREATED]**.
