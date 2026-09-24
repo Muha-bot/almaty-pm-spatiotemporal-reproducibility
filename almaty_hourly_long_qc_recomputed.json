@@ -1,0 +1,17 @@
+{
+  "sha256": "1188fc9d87ac3f0a3a947c81ec5083646f4703620e0e3db7ed48c3d90f57b8f8",
+  "rows": 613722,
+  "stations": 11,
+  "parameter_rows": {
+    "pm25": 355450,
+    "pm10": 258272
+  },
+  "synchronized_pm25_pm10_station_hours": 237783,
+  "same_hour_pearson_r": 0.8536095228180254,
+  "same_hour_spearman_rho": 0.8264684351325373,
+  "first_ts_utc": "2020-07-12T12:00:00Z",
+  "last_ts_utc": "2026-04-25T09:00:00Z",
+  "missing_cells": 0,
+  "negative_values": 0,
+  "duplicate_keys": 0
+}

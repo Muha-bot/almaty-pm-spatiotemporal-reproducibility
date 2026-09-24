@@ -1,0 +1,14 @@
+{
+  "n_stations": 107,
+  "n_blocks": 5,
+  "block_sizes": {
+    "0": 28,
+    "1": 28,
+    "2": 6,
+    "3": 38,
+    "4": 7
+  },
+  "regenerated_vs_archived_block_ARI": 1.0,
+  "block_construction": "KMeans(n_clusters=5, random_state=20260904, n_init=20) on z-standardized EPSG:32643 x/y coordinates",
+  "scope": "Station-mean PM2.5 spatial-field transfer sensitivity only; not final hourly station-holdout A0-A3 forecasting."
+}

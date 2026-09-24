@@ -1,0 +1,15 @@
+{
+  "source_file": "data/derived/spatial/kgmt_airgradient_pm25_hourly.csv.gz",
+  "source_sha256": "1f07bef59003df94cdca26f6f212a6bad25db40728555d881599b7a743a4e82a",
+  "window_start_utc": "2026-03-17 23:00:00+00:00",
+  "window_end_utc": "2026-04-25 09:00:00+00:00",
+  "n_kgmt_stations": 11,
+  "n_airgradient_candidate_pool": 141,
+  "n_monte_carlo_draws": 2000,
+  "monte_carlo_seed": 20260922,
+  "matched_network_mean_daily_MAE_ugm3": 26.661748069035657,
+  "random_network_median_daily_MAE_ugm3": 20.400967745718546,
+  "random_network_p25_daily_MAE_ugm3": 18.153405281855264,
+  "random_network_p75_daily_MAE_ugm3": 22.89855994575422,
+  "matched_minus_random_median_ugm3": 6.26078032331711
+}

@@ -1,0 +1,2 @@
+model,n,MAE_pooled,RMSE_pooled,R2_pooled,MAE_block_macro,RMSE_block_macro,hyperparameters
+XGBoost_coord_only,107,7.864233350590966,9.212571082255215,-0.21635518056008207,7.170597838475883,8.447847744337095,"{""n_estimators"": 300, ""max_depth"": 3, ""learning_rate"": 0.05, ""subsample"": 0.9, ""colsample_bytree"": 0.9, ""reg_lambda"": 1.0, ""random_state"": 20260922}"
