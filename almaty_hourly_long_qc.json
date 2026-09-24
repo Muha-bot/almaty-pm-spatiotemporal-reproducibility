@@ -1,0 +1,47 @@
+{
+  "artifact": "almaty_hourly_long.csv.gz",
+  "artifact_sha256": "1188fc9d87ac3f0a3a947c81ec5083646f4703620e0e3db7ed48c3d90f57b8f8",
+  "artifact_bytes": 3006896,
+  "schema": [
+    "parameter",
+    "ts_utc",
+    "station_id",
+    "source",
+    "value_ugm3"
+  ],
+  "n_rows_total": 613722,
+  "n_stations_total": 11,
+  "sources": [
+    "kgmt"
+  ],
+  "parameter_summary": {
+    "pm10": {
+      "rows": 258272,
+      "stations": 11,
+      "first_ts_utc": "2021-12-02T19:00:00Z",
+      "last_ts_utc": "2026-04-25T09:00:00Z",
+      "min_value_ugm3": 0.0,
+      "max_value_ugm3": 909.03
+    },
+    "pm25": {
+      "rows": 355450,
+      "stations": 11,
+      "first_ts_utc": "2020-07-12T12:00:00Z",
+      "last_ts_utc": "2026-04-25T09:00:00Z",
+      "min_value_ugm3": 0.0,
+      "max_value_ugm3": 972.0
+    }
+  },
+  "missing_cells_total": 0,
+  "nonfinite_value_count": 0,
+  "negative_value_count": 0,
+  "duplicate_parameter_station_time_rows": 0,
+  "synchronized_pm25_pm10_station_hours": 237783,
+  "same_hour_pearson_r": 0.8536095228180254,
+  "same_hour_spearman_rho": 0.8264684351325373,
+  "builder_file": "src/data/build_almaty_hourly_long.py",
+  "builder_sha256": "08c3bf977fca5e011abcf7f451438a6a46c8ecb2929fd0e42cc0331096d1b0ff",
+  "provenance_repository": "https://github.com/qazybekb/AirDatakz-OpenData",
+  "provenance_note": "The supplied CSV is internally audited and hash-locked. The exact AirData.kz source commit SHA is not embedded in this CSV and no matching builder QC JSON was supplied, so this package does not claim a specific source commit for this already-built artifact.",
+  "data_license_note": "AirData.kz repository states CC BY-NC 4.0 for its dataset, with attribution required and upstream source terms also applying. See DATA_LICENSE.md."
+}

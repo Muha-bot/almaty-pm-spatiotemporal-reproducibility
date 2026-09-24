@@ -1,0 +1,9 @@
+metric,OLS,GWR
+n_stations,133.0,133.0
+common_hours,956.0,956.0
+R2,0.514,0.773
+RMSE_ugm3,5.92,4.05
+AICc,867.7,821.3
+effective_params,7.0,27.1
+residual_Moran_I,0.282,0.101
+median_local_condition,,29.9
